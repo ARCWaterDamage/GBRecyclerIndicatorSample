@@ -36,7 +36,7 @@ public class MainActivity extends FragmentActivity implements GBBaseRecyclerAdap
         // Init Recycler View
         GBRecyclerView gbRecyclerView = findViewById(R.id.recycler_view);
         SampleVerticalRecyclerAdapter verticalRecyclerAdapter = new SampleVerticalRecyclerAdapter(this, new GBBaseAdapterConfigs.Builder()
-                .setLayoutManagerOrientation(GBBaseAdapterConfigs.VERTICAL).build(), "12345");
+                .setLayoutManagerOrientation(GBBaseAdapterConfigs.VERTICAL).build());
         gbRecyclerView.setGBAdapter(verticalRecyclerAdapter);
         verticalRecyclerAdapter.setOnClickRecyclerAdapterViewListener(this);
 

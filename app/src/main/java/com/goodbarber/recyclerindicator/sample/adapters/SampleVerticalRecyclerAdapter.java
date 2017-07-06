@@ -18,9 +18,9 @@ import java.util.List;
 
 public class SampleVerticalRecyclerAdapter extends GBBaseRecyclerAdapter<SampleIndicatorData>
 {
-    public SampleVerticalRecyclerAdapter(Context activity, GBBaseAdapterConfigs adapterConfigs, String sectionId)
+    public SampleVerticalRecyclerAdapter(Context activity, GBBaseAdapterConfigs adapterConfigs)
     {
-        super(activity, adapterConfigs, sectionId);
+        super(activity, adapterConfigs);
     }
 
     @Override

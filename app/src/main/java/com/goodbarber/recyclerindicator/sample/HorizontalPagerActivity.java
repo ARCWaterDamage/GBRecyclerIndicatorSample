@@ -33,7 +33,7 @@ public class HorizontalPagerActivity extends FragmentActivity
         GBRecyclerView gbRecyclerView = findViewById(R.id.recycler_view_pager);
         gbRecyclerView.setSwipeHorizontalEffect(GBRecyclerView.SwipeHorizontalEffect.PAGER_EFFECT); // Set the Effect
         SampleHorizontalRecyclerAdapter horizontalRecyclerAdapter = new SampleHorizontalRecyclerAdapter(this, new GBBaseAdapterConfigs.Builder()
-                .setLayoutManagerOrientation(GBBaseAdapterConfigs.HORIZONTAL).build(), "12345");
+                .setLayoutManagerOrientation(GBBaseAdapterConfigs.HORIZONTAL).build());
         gbRecyclerView.setGBAdapter(horizontalRecyclerAdapter);
         horizontalRecyclerAdapter.addListData(getSampleData(), true);
 
@@ -41,7 +41,7 @@ public class HorizontalPagerActivity extends FragmentActivity
         gbRecyclerView = findViewById(R.id.recycler_view_no_effect);
         gbRecyclerView.setSwipeHorizontalEffect(GBRecyclerView.SwipeHorizontalEffect.NONE); // Set the effect
         horizontalRecyclerAdapter = new SampleHorizontalRecyclerAdapter(this, new GBBaseAdapterConfigs.Builder()
-                .setLayoutManagerOrientation(GBBaseAdapterConfigs.HORIZONTAL).build(), "12345");
+                .setLayoutManagerOrientation(GBBaseAdapterConfigs.HORIZONTAL).build());
         gbRecyclerView.setGBAdapter(horizontalRecyclerAdapter);
         horizontalRecyclerAdapter.addListData(getSampleData(), true);
     }

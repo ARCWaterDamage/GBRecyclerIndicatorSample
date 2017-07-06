@@ -18,9 +18,9 @@ import java.util.List;
 public class SampleHorizontalRecyclerAdapter extends GBBaseRecyclerAdapter<SampleHorizontalIndicatorData>
 {
 
-    public SampleHorizontalRecyclerAdapter(Context activity, GBBaseAdapterConfigs adapterConfigs, String sectionId)
+    public SampleHorizontalRecyclerAdapter(Context activity, GBBaseAdapterConfigs adapterConfigs)
     {
-        super(activity, adapterConfigs, sectionId);
+        super(activity, adapterConfigs);
     }
 
     @Override
